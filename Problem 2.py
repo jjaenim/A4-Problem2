@@ -33,3 +33,12 @@ for line in lines:
         except ValueError:
             # Handle the case where GWA is not a valid float
             print(f"Invalid GWA found for '{name}': '{gwa}'")
+
+# Print the result
+print("\033[34m\033[34mThe student with highest GWA\033[0m")
+print("")
+print("\033[31m\033[32mStudent Name:\033[0m", highest_name )
+print("")
+print("\033[31m\033[32mGWA:\033[0m", highest_gwa )
+print("")
+print("")
