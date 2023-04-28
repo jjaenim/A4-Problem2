@@ -11,3 +11,6 @@ with open("C:\assignments_oop\A4-Problem2/student_data.txt", "r") as file_handle
 # Initialize the highest GWA and name
 highest_gwa = float('-inf')
 highest_name = ""
+
+# Iterate over the lines
+for line in lines:
