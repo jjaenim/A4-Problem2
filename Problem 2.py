@@ -26,3 +26,8 @@ for line in lines:
 
             # Compare the GWA with the highest GWA
             if gwa > highest_gwa :
+
+                # Update the highest GWA and name
+                highest_gwa = gwa
+                highest_name = name
+        except ValueError:
