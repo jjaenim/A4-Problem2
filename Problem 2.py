@@ -20,3 +20,6 @@ for line in lines:
     if len(parts) == 2:
         name, gwa = parts
         try:
+
+            # Convert the GWA to float
+            gwa = float(gwa)
