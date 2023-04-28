@@ -23,3 +23,6 @@ for line in lines:
 
             # Convert the GWA to float
             gwa = float(gwa)
+
+            # Compare the GWA with the highest GWA
+            if gwa > highest_gwa :
