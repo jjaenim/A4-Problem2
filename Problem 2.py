@@ -14,3 +14,9 @@ highest_name = ""
 
 # Iterate over the lines
 for line in lines:
+
+    # Split the line into name and GWA
+    parts = line.strip().split(",")
+    if len(parts) == 2:
+        name, gwa = parts
+        try:
