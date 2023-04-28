@@ -31,3 +31,5 @@ for line in lines:
                 highest_gwa = gwa
                 highest_name = name
         except ValueError:
+            # Handle the case where GWA is not a valid float
+            print(f"Invalid GWA found for '{name}': '{gwa}'")
