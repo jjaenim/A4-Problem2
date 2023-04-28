@@ -3,7 +3,7 @@
 # Assignment 4 - Problem 2
 
 # Open the file
-with open("C:\assignments_oop\A4-Problem2/student_data.txt", "r") as file_handle:
+with open("C:/assignments_oop/A4-Problem2/student_data.txt", "r") as file_handle:
     
     # Read the file line by line
     lines = file_handle.readlines()
@@ -42,3 +42,16 @@ print("")
 print("\033[31m\033[32mGWA:\033[0m", highest_gwa )
 print("")
 print("")
+
+# Creating column for the names and GWA
+print("Here is the list: ")
+print("")
+with open("C:/assignments_oop/TRYYY/student_data.txt") as column_file:
+    print("\033[0;32m{:<30}{:<30}".format("Student Name:", "GWA:"))
+    for line in column_file:
+        parts = line.strip().split(",")
+        if len(parts) == 2:
+            name, gwa = parts
+            column_name = name
+            column_gwa = gwa
+            print("\033[0;38m{:<30}{:<30}".format(column_name, column_gwa))
